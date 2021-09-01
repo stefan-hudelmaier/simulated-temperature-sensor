@@ -6,6 +6,9 @@ import os
 import sys
 
 connection_string = sys.argv[1] if len(sys.argv) > 1 else os.getenv("DEVICE_CONNECTION_STRING")
+if connection_string is None:
+    print("The device connection string must either be passed as the first parameter or as the DEVICE_CONNECTION_STRING env variable")
+    sys.exit(1)
 
 print("Using connection string", connection_string)
 
