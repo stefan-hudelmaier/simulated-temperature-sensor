@@ -4,7 +4,7 @@ A simple simulator of a temperature sensor that sends values to Azure IoT Hub
 
 ```
 docker run --rm -ti \
-  -e DEVICE_CONNECTION_STRING="HostName=ux4iot-iothub-e5ucf6glooqfi.azure-devices.net;DeviceId=simulated-device;SharedAccessKey=xxx" \
+  -e DEVICE_CONNECTION_STRING="HostName=myiothub.azure-devices.net;DeviceId=dev1;SharedAccessKey=xxx" \
   ghcr.io/stefan-hudelmaier/simulated-temperature-sensor:main
 ```
 
